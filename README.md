@@ -1,2 +1,2 @@
 # barber-shop
-This is a practice project for GOIT full stack developer course
+This is a practice project for GO-IT full stack developer course
