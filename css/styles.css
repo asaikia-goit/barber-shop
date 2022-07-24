@@ -1,0 +1,72 @@
+header {
+	display: flex;
+	width: 1280px;
+	height: 680px;
+
+	border: 1px solid black;
+}
+
+.white {
+	color: #fff;
+}
+
+h1 {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 85px;
+	letter-spacing: 0.05em;
+	padding: 0;
+}
+
+.icon-and-socials {
+	width: 155px;
+	height: 100%;
+	background-color: indianred;
+}
+
+.nav-and-hero-main-container {
+	width: calc(1280px - 115px);
+	height: 100%;
+	background-color: slateblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-and-hero-container {
+	width: 80%;
+	height: 80%;
+	background-color: mediumseagreen;
+}
+
+.navbar-and-contacts {
+	width: 100%;
+	height: 48px;
+	background-color: aliceblue;
+}
+
+.hero-text {
+	width: 500px;
+	height: 202px;
+	margin-top: 184px;
+	margin-left: 100px;
+	background-color: rgb(226, 120, 55);
+
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.hero-subtitle {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+
+	letter-spacing: 0.02em;
+
+	color: #9da4bd;
+}
