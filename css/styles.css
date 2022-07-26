@@ -1,6 +1,25 @@
+a {
+	text-decoration: none;
+	align-self: center;
+}
+
+body {
+	width: 1280px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
 header {
 	display: flex;
-	width: 1280px;
+	width: 100%;
 	height: 680px;
 
 	border: 1px solid black;
@@ -17,7 +36,7 @@ h1 {
 	font-size: 72px;
 	line-height: 85px;
 	letter-spacing: 0.05em;
-	padding: 0;
+	margin: 0;
 }
 
 .icon-and-socials {
@@ -29,22 +48,24 @@ h1 {
 .nav-and-hero-main-container {
 	width: calc(1280px - 115px);
 	height: 100%;
-	background-color: slateblue;
+	background-image: url('/images/hero-image.png');
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .nav-and-hero-container {
-	width: 80%;
-	height: 80%;
-	background-color: mediumseagreen;
+	width: 1016px;
+	height: 600px;
+	/* background-color: mediumseagreen; */
 }
 
 .navbar-and-contacts {
 	width: 100%;
 	height: 48px;
-	background-color: aliceblue;
+	padding-left: 100px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .hero-text {
@@ -52,11 +73,11 @@ h1 {
 	height: 202px;
 	margin-top: 184px;
 	margin-left: 100px;
-	background-color: rgb(226, 120, 55);
+	/* background-color: rgb(226, 120, 55); */
 
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
+	justify-content: space-between;
 }
 
 .hero-subtitle {
@@ -67,6 +88,52 @@ h1 {
 	line-height: 30px;
 
 	letter-spacing: 0.02em;
-
+	margin: 0;
 	color: #9da4bd;
+}
+
+.nav-items {
+	width: 405px;
+	justify-content: space-between;
+}
+
+.nav-item {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+
+	color: #ffffff;
+}
+
+.nav-item:hover {
+	color: #ff6c00;
+	cursor: pointer;
+}
+
+.contact-us-button {
+	margin-left: 40px;
+	border: 1px solid #ff6c00;
+	border-radius: 25px;
+	width: 160px;
+	height: 40px;
+	background-color: transparent;
+}
+
+/* ABOUT SECTION STYLING */
+
+.about-section {
+	width: 100%;
+	height: 705px;
+	background-color: rgb(164, 213, 255);
+	display: flex;
+}
+
+.about-container {
+	margin: 130px 91px 130px 55px;
+	background-color: slateblue;
+	width: calc(100% - 55px - 91px);
+	height: calc(100% - 130px - 130px);
 }
