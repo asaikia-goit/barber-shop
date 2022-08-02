@@ -30,13 +30,33 @@ header {
 }
 
 h1 {
-	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 72px;
 	line-height: 85px;
 	letter-spacing: 0.05em;
 	margin: 0;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+
+	color: #303030;
+}
+
+h4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	/* or 167% */
+
+	letter-spacing: 0.02em;
+
+	color: #555555;
 }
 
 .icon-and-socials {
@@ -81,7 +101,6 @@ h1 {
 }
 
 .hero-subtitle {
-	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -89,7 +108,26 @@ h1 {
 
 	letter-spacing: 0.02em;
 	margin: 0;
-	color: #9da4bd;
+	color: #b8bfd9;
+}
+
+.rect-icon {
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.rect-icon::before,
+.rect-icon::after {
+	content: '';
+	width: 60px;
+	height: 3px;
+	background-size: contain;
+}
+
+.rect-icon::before {
+	background-image: url('/images/rectangle.svg');
+	margin-right: 15px;
 }
 
 .nav-items {
@@ -98,7 +136,6 @@ h1 {
 }
 
 .nav-item {
-	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 12px;
@@ -127,13 +164,72 @@ h1 {
 .about-section {
 	width: 100%;
 	height: 705px;
-	background-color: rgb(164, 213, 255);
 	display: flex;
 }
 
 .about-container {
 	margin: 130px 91px 130px 55px;
-	background-color: slateblue;
 	width: calc(100% - 55px - 91px);
 	height: calc(100% - 130px - 130px);
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-deco-image {
+	width: 270px;
+	height: 100%;
+}
+
+.about-deco-image:nth-child(1) {
+	background-image: url('/images/about-1.png');
+}
+
+.about-deco-image:nth-child(2) {
+	background-image: url('/images/about-2.png');
+}
+
+.about-text-info {
+	width: 500px;
+	height: 100%;
+	margin-left: 24px;
+}
+
+.about-section-about-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	/* identical to box height */
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: #303030;
+}
+
+.about-section-about-description {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	color: #555555;
+}
+
+.services-and-prices-section {
+	width: 100%;
+	height: 718px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #111319;
+	background-image: url('/images/prices-and-services-bg.png');
+}
+
+.services-and-prices-container {
+	width: calc(100% - 55px - 55px);
+	height: calc(100% - 130px - 130px);
+
+	background-color: slateblue;
 }
