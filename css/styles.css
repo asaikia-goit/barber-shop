@@ -22,6 +22,10 @@ body {
 	align-items: center;
 }
 
+.justify-space-between {
+	justify-content: space-between;
+}
+
 header {
 	display: flex;
 	width: 100%;
@@ -263,5 +267,48 @@ h4 {
 .pricing-card{
 	width: 50%;
 	height: 100%;
+	padding: 28px 42px 32px 38px;
+}
+
+.pc-left{
 	background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.pc-right{
+	background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.sp-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px;
+	height: 30px;
+	color: #9DA4BD;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+
+	/* background: tomato; */
+}
+
+.sp-line {
+	height: 20px;
+	border-bottom: 2px solid rgba(157, 164, 189, 0.12);
+}
+
+.sp-line-one {
+	width: 268px;
+}
+
+.sp-line-two {
+	width: 293px;
+}
+
+.sp-line-three {
+	width: 259px;
+}
+
+.sp-line-four {
+	width: 210px;
 }
