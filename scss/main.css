@@ -486,6 +486,11 @@ h4 {
   justify-content: space-between;
   background-color: #F7F7F7;
 }
+@media (max-width: 768px) {
+  .info-section {
+    background-color: #F7F7F7;
+  }
+}
 
 .info-cards {
   width: 1170px;
