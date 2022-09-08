@@ -1,3 +1,9 @@
+:root{
+--dark-accent-color:#303030;
+--main-color:#ffffff;
+
+}
+
 a {
 	text-decoration: none;
 	align-self: center;
@@ -559,3 +565,37 @@ h4 {
 .card__icon--end{
 	margin-right: 10px;
 }
+
+.portfolio-section{
+	width: 1280px;
+	height: 679px;
+	background-color: var(--main-color);
+}
+
+.portfolio-heading{
+margin-top:130px;
+margin-left: 135px;
+margin-bottom:30px
+font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--dark-accent-color);
+}
+
+.portfolio-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 130px;
+}
+
+.portfolio-item{
+  display:flex;
+}
+
+ .portfolio-item:not(:last-child){
+	 margin-right: 30px;
+ }
