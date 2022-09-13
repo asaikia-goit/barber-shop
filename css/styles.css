@@ -1,3 +1,4 @@
+
 a {
 	text-decoration: none;
 	align-self: center;
@@ -30,8 +31,6 @@ header {
 	display: flex;
 	width: 100%;
 	height: 680px;
-
-	border: 1px solid black;
 }
 
 .white {
@@ -71,13 +70,52 @@ h4 {
 .icon-and-socials {
 	width: 155px;
 	height: 100%;
-	background-color: indianred;
+	padding: 32px 32px 40px 55px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon-and-socials > .left-nav-container {
+	width: 15px;
+	height: 270px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.icon-and-socials p {
+	transform: rotate(-90deg);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.2em;
+	color: #303030;
+}
+
+.icon-and-socials > div > div {
+	background: #9DA4BD;
+	width: 2px;
+	height: 60px;
+
+}
+
+.icon-and-socials .left-nav-container > *:hover {
+	color: tomato;
+	cursor: pointer;
 }
 
 .nav-and-hero-main-container {
 	width: calc(1280px - 115px);
 	height: 100%;
 	background-image: url('/images/hero-image.png');
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -559,3 +597,16 @@ h4 {
 .card__icon--end{
 	margin-right: 10px;
 }
+
+.thumb {
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
