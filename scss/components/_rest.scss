@@ -1,0 +1,392 @@
+a {
+    text-decoration: none;
+    align-self: center;
+}
+
+body {
+    width: 1280px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.centred {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.white {
+    color: #fff;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    letter-spacing: 0.02em;
+
+    color: #555555;
+}
+
+.rect-icon {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rect-icon::before,
+.rect-icon::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-size: contain;
+}
+
+.rect-icon::before {
+    background-image: url('/images/rectangle.svg');
+    margin-right: 15px;
+}
+
+/* ABOUT SECTION STYLING */
+
+.about-section {
+    width: 100%;
+    height: 705px;
+    display: flex;
+}
+
+.about-container {
+    margin: 130px 91px 130px 55px;
+    width: calc(100% - 55px - 91px);
+    height: calc(100% - 130px - 130px);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-deco-image {
+    width: 270px;
+    height: 100%;
+}
+
+.about-deco-image:nth-child(1) {
+    background-image: url('/images/about-1.png');
+}
+
+.about-deco-image:nth-child(2) {
+    background-image: url('/images/about-2.png');
+}
+
+.about-text-info {
+    width: 500px;
+    height: 100%;
+    margin-left: 24px;
+}
+
+.about-section-about-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #303030;
+}
+
+.about-section-about-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.services-and-prices-section {
+    width: 100%;
+    height: 718px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111319;
+    background-image: url('/images/prices-and-services-bg.png');
+}
+
+.services-and-prices-container {
+    width: calc(100% - 55px - 55px);
+    height: calc(100% - 130px - 130px);
+}
+
+.sp-info {
+    width: 100%;
+    height: 15px;
+    margin: 0px;
+}
+
+.services-and-prices-container>h2 {
+    /* Services and Prices */
+    margin: 20px 0px 46px 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+
+.pricing-details {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 48px;
+}
+
+.pricing-card {
+    width: 50%;
+    height: 100%;
+    padding: 28px 42px 32px 38px;
+}
+
+.pc-left {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.pc-right {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.sp-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 30px;
+    color: #9DA4BD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    /* background: tomato; */
+}
+
+.sp-line {
+    height: 20px;
+    border-bottom: 2px solid rgba(157, 164, 189, 0.12);
+}
+
+.sp-line-one {
+    width: 268px;
+}
+
+.sp-line-two {
+    width: 293px;
+}
+
+.sp-line-three {
+    width: 259px;
+}
+
+.sp-line-four {
+    width: 210px;
+}
+
+/* Reviews stylings */
+.reviews-metrics {
+    width: 100%;
+    height: 582px;
+    padding: 125px 155px;
+}
+
+.reviews-metrics>.accolades {
+    position: relative;
+    width: 370px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.accolades>.cards {
+    width: 173px;
+    height: 133px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accolades>.cards:nth-child(2) {
+    margin-top: 35px;
+}
+
+.accolades>.cards:nth-child(3) {
+    margin-bottom: 35px;
+}
+
+.accolades>.cards:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cards>h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+    margin: 0px;
+}
+
+.cards>h2>sup {
+    color: #FF6C00;
+}
+
+.cards>.subtitle {
+    margin: 0px 24px 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #303030;
+}
+
+.reviews-metrics>.why-us {
+    width: 470px;
+    height: 100%;
+}
+
+.why-us>.intro-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.why-us>.header-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.why-us>.subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.info-section {
+    width: 100%;
+    height: 890px;
+    padding: 115px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+
+    @media (max-width: 768px) {
+        background-color: #F7F7F7;
+    }
+}
+
+.info-cards {
+    width: 1170px;
+    height: 502px;
+}
+
+.card {
+    width: 370px;
+    height: 502px;
+}
+
+.card__image {
+    height: 346px;
+}
+
+.card__image--end {
+    margin-bottom: 30px;
+}
+
+.card__text {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.card__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FF6C00;
+}
+
+.card__subtitle--end {
+    margin-bottom: 30px;
+}
+
+.card__socials {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__icon--end {
+    margin-right: 10px;
+}

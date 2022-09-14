@@ -1,0 +1,1 @@
+const x = "lorem ipsum lorem5 asdsad asasf wteewfdsf sfds dsf sdg sdg sdg sgd" + "asfsddsd sdfsdf " + "sdfsdf";
